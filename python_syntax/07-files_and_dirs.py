@@ -101,3 +101,25 @@ Path('link_to_example.txt').symlink_to('example.txt')  # Create a symbolic link 
 
 # - `Path.resolve()`: Returns the absolute path of the file or directory.
 resolved_path = Path('example.txt').resolve()  # Get the absolute path of 'example.txt'
+
+
+"""
+Read and Write Files
+=========================
+"""
+
+with open('example.txt', 'r') as file:  # Open 'example.txt' for reading
+    content = file.read()  # Read the entire content of the file
+    print(content)  # Print the content of the file 
+
+with open('output.txt', 'w') as file:  # Open 'output.txt' for writing
+    file.write("Hello, World!")  # Write "Hello, World!" to 'output.txt'
+
+with open('output.txt', 'a') as file:  # Open 'output.txt' for appending
+    file.write("\nAppending this line.")  # Append a new line to 'output.txt
+
+with open('example.txt', 'r') as file:  # Open 'example.txt' for reading
+    lines = file.readlines()  # Read all lines into a list
+    for line in lines:
+        print(line.strip())  # Print each line without leading/trailing whitespace
+

@@ -52,6 +52,7 @@ print(str(100))  # Convert int to string = '100'
 # Type Conversion with Lists
 my_list = [1, 2, 3]
 print(list("123"))  # Convert string to list = ['1', '2', '3']
+
 # Type Conversion with Tuples
 my_tuple = (1, 2, 3)
 print(tuple([1, 2, 3]))  # Convert list to tuple = (1, 2, 3)
@@ -59,6 +60,7 @@ print(tuple([1, 2, 3]))  # Convert list to tuple = (1, 2, 3)
 # Type Conversion with Sets
 my_set = {1, 2, 3}
 print(set([1, 2, 3]))  # Convert list to set = {1, 2, 3}
+
 # Type Conversion with Dictionaries
 my_dict = {'a': 1, 'b': 2}
 print(dict([(1, 'one'), (2, 'two')]))  # Convert list of tuples to dict = {1: 'one', 2: 'two'}

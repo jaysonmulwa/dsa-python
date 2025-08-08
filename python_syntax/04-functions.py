@@ -16,7 +16,6 @@ example_function(1, 2, 3, a=4, b=5)  # Positional and keyword arguments
 # Keyword arguments: {'a': 4, 'b': 5} # 
 
 
-
 #### Decorators are a way to modify the behavior of a function or method.
 def decorator_function(func):
     def wrapper(*args, **kwargs):
